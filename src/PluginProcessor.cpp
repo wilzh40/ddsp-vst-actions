@@ -144,7 +144,7 @@ bool DDSPAudioProcessor::isBusesLayoutSupported (const BusesLayout& layouts) con
         // This checks if the input layout matches the output layout
 #if ! JucePlugin_IsSynth
     if (layouts.getMainOutputChannelSet() != layouts.getMainInputChannelSet())
-        return false;
+                return false;
 #endif
 
     return true;
